@@ -1,0 +1,320 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+    background-color:rgba(255, 255, 255, 0.096)
+
+    
+
+}
+body{
+    
+    height: 100%;
+}
+.main-wrapper{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main main"
+    "main main"
+    "footer footer";
+    
+    background-color: rgba(240, 248, 255, 0.274);
+    
+    height:100%;
+
+}
+
+
+header{
+    grid-area: header;
+    background-color: rgba(128, 245, 229, 0.911);
+    
+    
+}
+nav{
+    grid-area: nav;
+}
+    
+main{
+    grid-area:main;
+    padding: 30px;
+    background-color: #07f7d7;
+}
+
+aside{
+    grid-area: aside;
+    display: flex;
+    justify-content: flex-end;
+    background-color:#07f7d7;
+    flex-direction: vertical;
+
+}
+
+footer{
+    grid-area: footer;
+    background-color: white;
+    
+    
+    
+}
+.img-header {
+    text-align: left;
+    padding: 10px;
+}
+
+.logo-redes{
+    height: 100px;
+    width: 100px;
+}
+
+.formularios-1{
+    display: flex;
+    justify-content: flex-end;
+}
+.enlinea{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.listado{
+    list-style: none;
+    font-size: 20px;
+    
+}
+.img-home{
+    width: 1300px;
+
+}
+.main-container{
+    text-align: center
+    
+}
+.desc-div{
+    background-color:#07f7d7;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    
+
+    
+
+}
+.desc-div h4{
+    background-color: #07f7d7;
+    font-size: 35px;
+}
+.desc-div p{
+    background-color: #07f7d7;
+    font-size: 25px;
+}
+
+
+
+.como-llegar-desc{
+    background-color: #07f7d7;
+}
+.como-llegar-desc h4{
+    background-color:#07f7d7;
+    font-size: 35px;
+}
+
+
+.enlinea-2{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #56e7d4;
+    
+}
+.lista-redes{
+    list-style:none;
+    background-color: #56e7d4;
+    
+}
+.promo{
+    display: flex;
+    
+    border: dotted 2px black;
+    padding: 5px;
+
+    background-color: aqua;
+
+    position: fixed;
+}
+.promo h2{
+    background-color: aqua;
+}
+.img-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+    
+}
+.img-login img{
+height: 30px;
+width: 30px;
+}
+.img-login-desc{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+
+.forms-revendedores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.revendedores-text{
+    text-align: center;
+}
+.container-paletas{
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+border: solid 2 px black;
+
+
+}
+.container-fluid{
+    background-color: #56e7d4;
+}
+
+    
+
+
+.paletas form{
+    background-color: aquamarine;
+    padding: 5px;
+}
+.paletas p{
+    background-color: aquamarine;
+
+}
+.paletas h2{
+    background-color: aquamarine;
+}
+.paletas-foto{
+    height:400px;
+    width: 400px;
+}
+.formularios-2{
+    display: flex;
+    justify-content: center;
+}
+.formularios-2 input{
+    width: 50vw;
+}
+.promo-header{
+    background-color: aquamarine;
+    text-align: center;
+}
+.promo-header span{
+    background-color: aquamarine;
+}
+.nav-item a{
+font-size: 20px;
+padding: 5px;
+color: black !important;
+background-color: #56e7d4 ;
+}
+.nav-item{
+    padding: 5px;
+    background-color: #56e7d4;
+}
+.newsletter{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: aqua;
+    
+    
+    
+}
+.newsletter h3{
+    background-color: aqua;
+}
+.newsletter span{
+    padding: 5px;
+    background-color: aqua;
+}
+.newsletter form{
+    background-color: aqua;
+}
+.redes{
+    background-color:#56e7d4;
+    padding: 20px;
+    
+}
+.lista-redes img{
+    background-color:#56e7d4;
+
+}
+.redes h2{
+    background-color:#56e7d4;
+
+}
+.card{
+    background-color: #247b70;
+}
+.navbar-brand{
+    color: black !important;
+    background-color: #56e7d4;
+}
+.navbar-toggler{
+    color: black !important;
+}
+.imagen-logo{
+    animation-name: movimiento;
+    animation-iteration-count:initial;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+
+}
+.boton-revendedores{
+    display: flex;
+    justify-content: center;
+    padding: 1vw 1vh;
+}
+
+
+.foto-promo{
+    height: 18vh;
+    width: 30vw;
+
+}
+
+
+
+@keyframes movimiento {
+    0%{
+        width: 80px;
+        transform:translateX(50px)
+    }
+    25%{
+        width: 130px;
+        transform: translateY(20px);
+    }
+    75%{
+        width: 95px;
+        transform: rotate(180deg);
+    }
+    100%{
+        width: 150px;
+        transform: rotate(360deg);
+    }
+}    
+@media screen and  (min-width:0px){
+    .como-llegar-desc iframe{
+        width: 60vw;
+    }
+
+    
+}
+
+
+
