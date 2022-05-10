@@ -1,0 +1,46 @@
+.main-wrapper{
+    footer{
+        grid-area: footer;
+        background-color: white;
+        .newsletter{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: $color-primary;
+            h3{
+                background-color: $color-primary;
+            }
+            span{
+                padding: 5px;
+                background-color: $color-primary;
+            }
+            form{
+                background-color: $color-primary;
+            }
+        }
+        .redes{
+            background-color:$color-primary;
+            padding: 20px;
+            h2{
+                background-color:$color-primary;
+            }
+            .enlinea-2{
+                display: flex;
+                justify-content: space-evenly;
+                background-color: $color-primary;
+                .lista-redes{
+                    list-style:none;
+                    background-color: $color-primary;
+                    img{
+                        background-color:$color-primary;
+                    
+                    }
+                    
+                }
+                
+            }
+            
+        }
+    }
+}

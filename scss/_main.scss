@@ -1,0 +1,36 @@
+.main-wrapper{
+    main{
+        section{
+            .desc-div{
+                background-color:$color-primary;
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                    h4{
+                        background-color: $color-primary;
+                        font-size: 35px;
+                    }
+                    p{
+                        background-color: $color-primary;
+                        font-size: 25px;
+                    }
+                }
+            }
+        aside{
+            grid-area: aside;
+            display: flex;
+            justify-content: flex-end;
+            background-color:$color-primary;
+            flex-direction: vertical;
+                .como-llegar-desc{
+                    background-color: $color-primary;
+                        h4{
+                            background-color:$color-primary;
+                            font-size: 35px;
+                    
+                            }
+                    }
+
+            }
+        } 
+}          

@@ -1,0 +1,67 @@
+.main-wrapper{
+    header{
+        .promo-header{
+            background-color: $color-secondary;
+            text-align: center;
+                span{
+                    background-color: $color-secondary
+                    }
+        }
+        .img-header {
+            text-align: left;
+            padding: 10px;
+            .imagen-logo{
+                animation-name: movimiento;
+                animation-iteration-count:initial;
+                animation-timing-function: ease-in-out;
+                animation-duration: 4s;
+                animation-delay: 0.5s;
+            
+            }
+        }
+        .formularios-2{
+            display: flex;
+            justify-content: center;
+            .input{
+                width: 50vw;
+                }   
+
+        }
+        .img-login{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding: 10px;
+            .img{
+                height: 30px;
+                width: 30px;
+                }
+            .img-login-desc{
+                display: flex;
+                justify-content: flex-end;
+                padding: 5px;
+                }
+        }
+        
+        
+    
+    }    
+    @keyframes movimiento {
+        0%{
+            width: 80px;
+            transform:translateX(50px)
+        }
+        25%{
+            width: 130px;
+            transform: translateY(20px);
+        }
+        75%{
+            width: 95px;
+            transform: rotate(180deg);
+        }
+        100%{
+            width: 150px;
+            transform: rotate(360deg);
+        }
+    }    
+}

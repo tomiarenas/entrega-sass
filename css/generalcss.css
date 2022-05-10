@@ -1,0 +1,121 @@
+.main-wrapper header .promo-header {
+  background-color: aquamarine;
+  text-align: center; }
+  .main-wrapper header .promo-header span {
+    background-color: aquamarine; }
+
+.main-wrapper header .img-header {
+  text-align: left;
+  padding: 10px; }
+  .main-wrapper header .img-header .imagen-logo {
+    animation-name: movimiento;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-delay: 0.5s; }
+
+.main-wrapper header .formularios-2 {
+  display: flex;
+  justify-content: center; }
+  .main-wrapper header .formularios-2 .input {
+    width: 50vw; }
+
+.main-wrapper header .img-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px; }
+  .main-wrapper header .img-login .img {
+    height: 30px;
+    width: 30px; }
+  .main-wrapper header .img-login .img-login-desc {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px; }
+
+@keyframes movimiento {
+  0% {
+    width: 80px;
+    transform: translateX(50px); }
+  25% {
+    width: 130px;
+    transform: translateY(20px); }
+  75% {
+    width: 95px;
+    transform: rotate(180deg); }
+  100% {
+    width: 150px;
+    transform: rotate(360deg); } }
+
+.main-wrapper {
+  display: grid;
+  grid-template-areas: "header header" "nav nav" "main main" "main main" "footer footer";
+  background-color: rgba(240, 248, 255, 0.274);
+  height: 100%; }
+  .main-wrapper nav {
+    grid-area: nav; }
+    .main-wrapper nav .container-fluid {
+      background-color: aquamarine; }
+      .main-wrapper nav .container-fluid .nav-item {
+        padding: 5px;
+        background-color: aquamarine; }
+        .main-wrapper nav .container-fluid .nav-item a {
+          font-size: 20px;
+          padding: 5px;
+          color: black !important;
+          background-color: aquamarine; }
+
+.main-wrapper main section .desc-div {
+  background-color: #07f7d7;
+  padding: 5px;
+  display: flex;
+  flex-direction: column; }
+  .main-wrapper main section .desc-div h4 {
+    background-color: #07f7d7;
+    font-size: 35px; }
+  .main-wrapper main section .desc-div p {
+    background-color: #07f7d7;
+    font-size: 25px; }
+
+.main-wrapper main aside {
+  grid-area: aside;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #07f7d7;
+  flex-direction: vertical; }
+  .main-wrapper main aside .como-llegar-desc {
+    background-color: #07f7d7; }
+    .main-wrapper main aside .como-llegar-desc h4 {
+      background-color: #07f7d7;
+      font-size: 35px; }
+
+.main-wrapper footer {
+  grid-area: footer;
+  background-color: white; }
+  .main-wrapper footer .newsletter {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #07f7d7; }
+    .main-wrapper footer .newsletter h3 {
+      background-color: #07f7d7; }
+    .main-wrapper footer .newsletter span {
+      padding: 5px;
+      background-color: #07f7d7; }
+    .main-wrapper footer .newsletter form {
+      background-color: #07f7d7; }
+  .main-wrapper footer .redes {
+    background-color: #07f7d7;
+    padding: 20px; }
+    .main-wrapper footer .redes h2 {
+      background-color: #07f7d7; }
+    .main-wrapper footer .redes .enlinea-2 {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #07f7d7; }
+      .main-wrapper footer .redes .enlinea-2 .lista-redes {
+        list-style: none;
+        background-color: #07f7d7; }
+        .main-wrapper footer .redes .enlinea-2 .lista-redes img {
+          background-color: #07f7d7; }
