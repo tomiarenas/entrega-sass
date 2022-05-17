@@ -25,7 +25,7 @@
                 .como-llegar-desc{
                     background-color: $color-primary;
                         h4{
-                            background-color:$color-primary;
+                            @extend .como-llegar-desc;
                             font-size: 35px;
                     
                             }
@@ -33,4 +33,26 @@
 
             }
         } 
-}          
+}    
+$bodies:(
+    card-body1:#339be0
+    card-body2:#0d5280
+    card-body3:#152f41
+    card-body4:#3f80ac
+);
+@each $body,$color in $bodies{
+    .clase-body#{$body} {
+        color: $color;
+    }
+    
+}
+@mixin fuente ($size,$familia)  {
+    font-size: $size;
+    font-family:$familia 
+
+}
+.card-body1{
+    h3{
+        @include fuente(large,sans-serif) 
+    }
+}
